@@ -1,27 +1,17 @@
+$(document).on("pagecreate","#pageone",function(){
+  $('#submitButton').on("click", function(){
+    submitText();
+  });            
+});            
 
 
-function onLoad() {
-    document.addEventListener("deviceready", onDeviceReady, false);
-    console.log("device ready");
+function submitText() {
+	var text = $('#textinput').val();
+	alert(text);
 }
-	
-function updateDisplay() {
-    
+
+function storeValue(key, value) {
+	//add some code to store the key-value pair in persistant storage 
 }
 
 
-// device APIs are available
-//
-function onDeviceReady() {
-		
-    alert("ready to go");
-        
-    document.addEventListener("resume", onResume, false);
-    document.addEventListener("pause", onPause, false);
-		
-    console.log(device.cordova);
-		
-    launched_count++;
-    updateDisplay();
-    
-}
