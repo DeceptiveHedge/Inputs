@@ -20,7 +20,9 @@
     
     <plugin name="cordova-plugin-device" spec="~1.1.6" />
 
-    <preference name="permissions"                value="none"/>   
+    <preference name="permissions"                value="none"/>  
+    
+    <plugin name="cordova-plugin-whitelist" spec="~1.3.2" />
 	
 	<access origin="*"/>
 </widget>
